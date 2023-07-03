@@ -1,7 +1,24 @@
 package org.example.masjavafundamental.cobacoba;
 
+import java.util.Scanner;
+
 public class ProgramUpperLowerCase {
     public static void main(String[] args) {
+
+        Scanner inputUser = new Scanner(System.in);
+        System.out.println("Masukan huruf: ");
+        char ch = inputUser.next().charAt(0);
+        int castAscii = (int) ch;
+
+        System.out.println(castAscii);
+
+        if (castAscii >= 65 && castAscii <= 90){
+            System.out.println("Huruf kapital");
+        }else if(castAscii >= 97 && castAscii <= 122){
+            System.out.println("Huruf kecil");
+        }else {
+            System.out.println("Bukan huruf");
+        }
 
     }
 }
